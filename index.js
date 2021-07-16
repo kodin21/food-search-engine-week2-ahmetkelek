@@ -17,8 +17,6 @@ fetch("https://jsonplaceholder.typicode.com/todos").then((response) => {
       data.forEach((u) => {
       
         temp += "<tr>";
-        //temp += "<td>"+u.id+"</td>";
-       // temp += "<td>"+u.userId+"</td>";
         temp += "<td>" + u.title + "</td>";// Yemek basligi
         temp += "<td><i class='fas fa-heart'></i></td></tr>"//fav icon
         
