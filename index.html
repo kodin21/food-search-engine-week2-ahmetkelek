@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    KODUNUZU BURAYA YAZABILIRSINIZ
+    <!--BOOTSTRAP CSS START-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--BOOTSTRAP CSS END-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!--FONT AWESOME CDN-->
+
+    
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader">
+     
+    </div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+    
+    <div class="container">
+     
+      <div class="row">
+          <!--LOGIN-->
+          <div class="col-md-6" style="margin-left:350px;">
+            <p id="userlogin"></p>
+          </div>
+          <!--LOGIN-->
+          <div class="col-5">
+        
+            <form action="" autocomplete="off">
+              
+              <div class="form-row mb-5">
+               
+                <div class="col-12" id="inputBox">
+                  <!--SearchBox-->
+                  <div class="autocomplete" style="width: 300px; margin-left:250px; margin-top:-30px;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Aramak istediğiniz yemek adını girin"
+                      id="search"
+                      onkeyup="filter()"
+                    />
+                  </div>
+                  <!--SearchBox-->
+                
+              </div>
+            </form>
+          </div>
+     
+        </div>
+      
+        <!-- FoodList  START-->
+        <table class="table table-stripped" id="myTable" onclick="alert(event.target.innerText=`Favorilere eklendi`)">
+            <tr class="header">
+              <th>Food TITLE</th>
+              <th>Favoriye Ekle</th>
+            </tr>
+          <tbody id="data">
+            
+          
+          </tbody>
+          
+        </table>
+       
+     <!--FoodList  END-->
+    </div>
+      </div>
+    </div>
+
+
+    <!--BOOTSTRAP JS START-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!--BOOTSTRAP JS END-->
     <script src="index.js"></script>
-</body>
+
+  </body>
 </html>
