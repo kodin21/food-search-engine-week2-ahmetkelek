@@ -12,7 +12,7 @@ fetch("https://jsonplaceholder.typicode.com/todos").then((response) => {
     console.log(data);
     if (data.length > 0) {
       var temp = "";
-      //.. start loop
+      //. start loop
 
       data.forEach((u) => {
       
@@ -24,7 +24,7 @@ fetch("https://jsonplaceholder.typicode.com/todos").then((response) => {
         
 
       });
-      //.. end loop
+      //. end loop
       document.getElementById("data").innerHTML = temp;
     }
   });
